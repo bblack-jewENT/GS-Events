@@ -1,0 +1,92 @@
+
+.home {
+  padding: 2.5rem 0 1.5rem 0;
+  width: 100vw;
+  min-width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #4f46e5;
+  letter-spacing: 1px;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+
+.search-bar {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.7rem 1rem;
+  font-size: 1.05rem;
+  border-radius: 6px;
+  border: 1px solid #c7d2fe;
+  margin: 0 0 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.05);
+}
+
+.featured-events,
+.trending-brands {
+  margin-bottom: 2.2rem;
+}
+
+.events-grid,
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.event-card,
+.brand-card {
+  background: #f3f4f6;
+  border: 1px solid #e0e7ff;
+  border-radius: 10px;
+  padding: 1.2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(79, 70, 229, 0.06);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.event-card:hover,
+.brand-card:hover {
+  box-shadow: 0 4px 24px rgba(79, 70, 229, 0.12);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.event-card h3,
+.brand-card h3 {
+  color: #312e81;
+  margin-bottom: 0.5rem;
+}
+.event-card p,
+.brand-card p {
+  color: #374151;
+  font-size: 1rem;
+}
+
+.event-card button,
+.brand-card button {
+  margin-top: 1rem;
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
